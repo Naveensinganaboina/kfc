@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Nothing.com </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script type="text/javascript">
+        function RegistrationClick(){
+
+            document.getElementById("lblName").innerHTML = document.getElementById("textName").value;
+            document.getElementById("lblMN").innerHTML = document.getElementById("textNumber").value;
+            document.getElementById("lblDate").innerHTML = document.getElementById("textDate").value;
+            document.getElementById("lblDays").innerHTML = document.getElementById("textDays").value;
+            document.getElementById("lblPersons").innerHTML = document.getElementById("textPersons").value;
+
+        }
+    </script>
+</head>
+<body class="container-fluid">
+    <div class="">
+        <h2 class="d-flex justify-content-center align-content-center mt-2 w-100" style="background-color: aqua; border: 3px solid blue;">Hotel Registration Form </h2>
+    </div>
+    <div>
+        <img src="./images/Kfc.jpg" class="w-100 mt-2 p-0.5" height="350px">
+    </div>
+    <div class="accordion" id="KFCForm">
+        <div class="accordion-item">
+            <div class="accordion-header">
+               <button class="d-flex justify-content-center align-content-center text-black w-100" data-bs-target="#Customer" data-bs-toggle="collapse" style="border: 3px solid black;"> <h2 >Costumer Info</h2></button>
+            </div>
+            <div class="accordion-collapse collapse show" id="Customer" data-bs-parent="#KFCForm">
+                <div class="accordion-body d-flex justify-content-center align-content-center mt-2" id="Customer" style="border: 1px solid black;">
+                    <div>
+                        <h3> Costumer Name&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;:  <input type="text" placeholder="Enter Your Name" id="textName"  name="text" ></h3>
+                        <h3>Mobile number&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <input type="text" min="" max="10" value="+91 " id="textNumber"  placeholder="Enter your Number "></h3>
+                        <h3> Check In Date &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <input type="date"  id="textDate"  name=""></h3>
+                        <h3> Total No Of Days&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;: <input type="number" id="textDays" placeholder="" > </h3>
+                        <h3>Total No Of Persons : <input type="number"  id="textPersons" > </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-header" >
+                <button class="d-flex justify-content-center align-content-center text-black mt-2 w-100" data-bs-target="#Room" data-bs-toggle="collapse"  style="border: 3px solid black;" ><h2>Select Room Type</h2> </button>
+            </div>
+            <div class="accordion-collapse collapse" id="Room" data-bs-parent="#KFCForm">
+                <div class="accordion-body mt-2 "  style="border: 1px solid black;">
+                    <div class="d-flex justify-content-center align-content-center">
+                        <div class="me-5 mt-3">
+                            <img src="./images/Delux-Room.jpg" alt="">
+                            <div style="margin-left: 170px; font-size: xx-large;"><input type="radio" name="room" class="form-check-input" id="otpDelux" value="Delux Room "><span><b>Delux Room</b> </span> <br> <span class="ms-5">&#8377; 1500</span></div>
+                        </div>
+                        <div class="mt-3">
+                            <img src="./images/Suit-Room.jpg" alt="">
+                            <div style="margin-left: 170px; font-size:xx-large;"><input type="radio" name="room" value="Suit Room" id="otpSuit" class="form-check-input" > <b> Suit Room</b>  </span> <br> <span class="ms-5">&#8377; 2000</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <button class="d-flex justify-content-center align-content-center w-100 mt-2" data-bs-target="#Comfort" data-bs-toggle="collapse" style="border: 3px solid black;"><h2> Select Amenities</h2></button>
+            </div>
+            <div class="accordion-collapse collapse" id="Comfort" data-bs-parent="#KFCForm">
+                <div class="accordion-body mt-2" style=" border: 1px solid black;">
+                    <div class="d-flex justify-content-center align-content-center">
+                        <div class="" style="margin-right: 45px;">
+                            <img src="./images/Ac.gif" width="" alt="">
+                            <div style="margin-left: 170px; font-size: xx-large;"><input type="checkbox" class="form-check-input" id="otpAC" value="A/C"><span> <b> A/C </b> </span></div><b style="margin-left: 200px;"><span class="">&#8377; 1000</span></b>
+                        </div>
+                        <div>
+                            <img src="./images/Locker.jpg" alt="">
+                            <div class="" style="margin-left: 170px; font-size: xx-large;"><input type="checkbox" class="form-check-input" id="otpLucker" value="Lucker"><span><b> Lucker</b></span> </div><b style="margin-left: 200px;"><span class="">&#8377; 300 </span></b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <button class="d-flex justify-content-center align-content-center w-100 mt-2" data-bs-target="#Amount" data-bs-toggle="collapse" style="border: 3px solid black;"> <h2> Advance Amount </h2></button>
+            </div>
+            <div class="accordion-collapse collapse"  id="Amount" data-bs-parent="#KFCForm">
+                <div class="accordion-body mt-2" style="border: 1px solid black;">
+                    <h3 class="d-flex justify-content-center align-content-center"> Advance Amount &#8377; : &nbsp; <input type="number" placeholder="Advance to pay" value="1000" ></h3>
+                </div>
+                <div class="d-flex justify-content-center align-content-center mt-2 mb-2">
+                    <button onclick="RegistrationClick()" class="btn btn-primary" data-bs-target="#Summary" data-bs-toggle="modal">Registration</button> 
+               </div>
+               <div class="modal fade" id="Summary">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2> Your Bill Summary </h2>
+                                <button data-bs-dismiss="modal" class="btn-close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="col">
+                                    <dl class="row">
+                                        <dt class="col-4">Costumer Name</dt>
+                                        <dd class="col-6" id="lblName"></dd>
+                                        <dt class="col-4">Mobile number</dt>
+                                        <dd class="col-6" id="lblMN"></dd>
+                                        <dt class="col-4">Check In Date</dt>
+                                        <dd class="col-6" id="lblDate"></dd>
+                                        <dt class="col-4">Total No Of Days</dt>
+                                        <dd class="col-6" id="lblDays"></dd>
+                                        <dt class="col-4">Total No Of Persons</dt>
+                                        <dd class="col-6" id="lblPersons"></dd>
+                                        <dt class="col-4">Room</dt>
+                                        <dd class="col-6" id="lblRoom"></dd>
+                                        <dt class="col-4">Amenities</dt>
+                                        <dd class="col-6" id="lblAmen"></dd>
+                                        <dt class="col-4">total</dt>
+                                        <dd class="col-6" id="lblTotal"></dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary">Details </button>
+                                <button class="btn btn-danger"> Pay </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
