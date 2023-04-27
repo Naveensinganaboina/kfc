@@ -1,16 +1,14 @@
 
-@media (max-width: 480px){
-    /* #cust-info{
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    } */
+@media screen and (max-width: 480px){
+    #cu-info{
+        padding-left: 60px;
+    }
 }
-@media (max-width: 768px){
+@media screen and (min-width: 768px){
     
 }
-@media (max-width: 1200px){
-    
-   
+@media screen and (min-width: 1200px){
+    #cu-info{
+        margin-left: 280px;
+    }
 }
